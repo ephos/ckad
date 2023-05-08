@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+    costcenter: 238
+    location: us-east
+    type: frontend
+spec:
+  containers:
+    - name: frontend-container
+      image: nginx
+
+    - name: cache-container
+      image: redis
